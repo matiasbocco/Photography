@@ -10,7 +10,7 @@ body.inicio {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-image: url('../Fotos/birds/foto1.jpg');
+    background-image: url('Fotos/birds/foto1.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
