@@ -37,6 +37,12 @@ body.inicio {
     background-position: center;
 }
 
+.pagina-deportes header {
+    background-image: url('../Fotos/Deportes/IMG-20250820-WA0036.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
 header {
     background-color: #2c3e50;
     /* Fallback */
