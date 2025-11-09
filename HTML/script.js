@@ -1,5 +1,5 @@
 // Lightbox profesional para galería de fotos
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     // Crear el modal/lightbox
     const lightbox = document.createElement('div');
     lightbox.id = 'lightbox';
