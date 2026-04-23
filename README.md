@@ -1,124 +1,111 @@
-# Portfolio Fotográfico - Matias Juan Bocco
+# Photography Portfolio — Matias Juan Bocco
 
-Portfolio personal de fotografía profesional especializado en deportes, fauna, automóviles y paisajes.
+**Live site →** [matiasbocco.github.io/Photography](https://matiasbocco.github.io/Photography)
 
-## Sobre Mí
-
-Fotógrafo de 20 años con formación en la Universidad Católica de Córdoba. Apasionado por capturar la esencia de los deportes, la vida silvestre, los automóviles y los paisajes naturales.
-
-## Ver el Portfolio
-
-Abre `index.html` en tu navegador para ver el portfolio completo.
-
-## Categorías
-
-### 🏆 Deportes
-Fotografía de acción capturando momentos intensos de competiciones deportivas, incluyendo el histórico Pumas vs All Blacks en Córdoba 2025.
-
-### 🦅 Fauna
-Vida silvestre y aves en su hábitat natural, capturadas en Miramar de Ansenuza 2025.
-
-### 🚗 Automóviles
-Autos clásicos, deportivos y de colección con enfoque en detalles y líneas.
-
-### 🌄 Paisajismo
-Paisajes naturales de Argentina, Brasil, España e Italia (Barcelona, Venecia, Roma, Vaticano) capturando la belleza de distintos lugares del mundo.
-
-## Características del Sitio
-
-- ✨ **Galería Interactiva**: Lightbox profesional para visualizar imágenes en alta calidad
-- 🧭 **Navegación Fluida**: Menú sticky para cambiar entre categorías fácilmente
-- ⚡ **Optimización de Rendimiento**: Lazy loading de imágenes para carga rápida
-- 📱 **Diseño Responsive**: Adaptado para dispositivos móviles, tablets y desktop
-- 🔍 **SEO Optimizado**: Meta tags y Open Graph para mejor indexación
-- ♿ **Accesibilidad**: Alt text descriptivo y navegación por teclado
-
-## Tecnologías Utilizadas
-
-- HTML5
-- CSS3 (con variables CSS y diseño responsive)
-- JavaScript vanilla
-- Google Fonts (Montserrat)
-
-## Estructura del Proyecto
-
-```
-Photography/
-├── index.html              # Página principal
-├── style.css              # Estilos globales con variables CSS
-├── README.md              # Este archivo
-├── HTML/
-│   ├── birds.html         # Galería de fauna
-│   ├── sports.html        # Galería deportiva
-│   ├── cars.html          # Galería automotriz
-│   ├── landscapes.html    # Galería de paisajes
-│   └── script.js          # JavaScript para lightbox
-└── Fotos/
-    ├── birds/             # Imágenes de fauna (Miramar de Ansenuza)
-    ├── Deportes/          # Imágenes deportivas (Pumas vs All Blacks)
-    ├── cars/              # Imágenes de automóviles
-    └── landscapes/        # Imágenes de paisajes (ARG, Brasil, España, Italia)
-```
-
-## Características Técnicas
-
-### Lightbox
-- Navegación con flechas del teclado (← →)
-- Cerrar con tecla ESC
-- Click fuera de la imagen para cerrar
-- Botones de navegación anterior/siguiente
-- Captions descriptivos con información de ubicación
-
-### Performance
-- Lazy loading nativo (`loading="lazy"`)
-- Preconnect para Google Fonts
-- Loading skeleton animado mientras cargan las imágenes
-- CSS con variables para mejor mantenimiento
-
-### Responsive Design
-- Breakpoints: 480px, 768px
-- Grid adaptativo para galerías
-- Navegación optimizada para móviles
-- Botones táctiles amigables
-- Botón flotante "Volver al Inicio"
-
-## Navegación
-
-### Lightbox Controls
-- **Click en imagen**: Abrir en modo full screen
-- **Flechas ← →**: Navegar entre imágenes
-- **ESC**: Cerrar lightbox
-- **Click fuera**: Cerrar lightbox
-
-### Navegación del Sitio
-- **Menú superior sticky**: Acceso rápido a todas las galerías
-- **Botón flotante**: Volver al inicio desde cualquier galería
-
-## Cómo Usar Localmente
-
-1. Clona este repositorio o descarga los archivos
-2. Abre `index.html` en tu navegador web
-3. Navega entre las diferentes categorías
-4. Click en cualquier imagen para ver en tamaño completo
-
-## Mejoras Implementadas
-
-- ✅ Lightbox profesional con navegación por teclado
-- ✅ Lazy loading para mejor rendimiento
-- ✅ Alt text descriptivo con ubicaciones específicas
-- ✅ Meta tags SEO y Open Graph
-- ✅ Variables CSS para mantenimiento fácil
-- ✅ Loading skeleton animado
-- ✅ Menú de navegación entre galerías
-- ✅ Responsive design optimizado
-- ✅ Preconnect para Google Fonts
-
-## Contacto
-
-Matias Juan Bocco
-Fotógrafo Profesional
-Formación: Universidad Católica de Córdoba
+A fully hand-coded photography portfolio built with pure HTML, CSS, and JavaScript — no frameworks, no build tools, no dependencies. Each line written from scratch to showcase photos taken across Argentina, Brazil, Spain, Italy, and the United States.
 
 ---
 
-© 2025 - Matias Bocco. Todos los derechos reservados.
+## Galleries
+
+| Category | Highlights | Count |
+|----------|-----------|-------|
+| **Sports** | Pumas vs All Blacks · Córdoba 2025 | 44 photos |
+| **Wildlife** | Birds · Miramar de Ansenuza 2025 | 11 photos |
+| **Automobiles** | Classic & sport cars | 23 photos |
+| **Landscapes** | Argentina · Brazil · Spain · Italy · Wyoming | 24 photos |
+
+---
+
+## Features
+
+- **Cinematic intro slideshow** — 5-image fullscreen slider with smooth CSS transitions and fade-to-black
+- **Lightbox** — full-screen image viewer with keyboard navigation (← → ESC) and touch swipe support
+- **Scroll fade-in** — images animate into view as the user scrolls, with staggered timing per column
+- **Blur-up loading** — images start blurred and sharpen progressively as they load (no layout shift)
+- **Lazy loading** — native `loading="lazy"` + `<link rel="preload">` for above-the-fold images
+- **Responsive grid** — CSS Grid with `auto-fill / minmax` adapts from 1 to 4 columns without breakpoints
+- **Sticky navigation** — gallery switcher stays at the top during scroll
+- **About page** — profile card with email reveal (no mailto spam) and social links
+- **SEO + Open Graph** — meta tags on every page for social sharing previews
+- **Zero dependencies** — no npm, no webpack, no React. One CSS file, one JS file.
+
+---
+
+## Tech Stack
+
+| Layer | Technology |
+|-------|-----------|
+| Markup | HTML5 (semantic elements, Open Graph meta) |
+| Styles | CSS3 — custom properties, Grid, keyframe animations, `IntersectionObserver`-driven classes |
+| Logic | Vanilla JavaScript — IntersectionObserver, touch events, dynamic DOM |
+| Fonts | Google Fonts — Montserrat 300 / 600 |
+| Hosting | GitHub Pages |
+
+---
+
+## Project Structure
+
+```
+Photography/
+├── index.html              # Landing page with intro slideshow
+├── style.css               # All styles — variables, grid, animations, lightbox
+├── HTML/
+│   ├── sports.html         # Sports gallery (44 photos)
+│   ├── birds.html          # Wildlife gallery (11 photos)
+│   ├── cars.html           # Automobile gallery (23 photos)
+│   ├── landscapes.html     # Landscapes gallery (24 photos)
+│   ├── about.html          # About page with profile card
+│   └── script.js           # Lightbox, scroll animations, blur-up, swipe
+└── Fotos/
+    ├── Deportes/           # Sports photos
+    ├── birds/              # Wildlife photos
+    ├── cars/               # Automobile photos
+    ├── landscapes/         # Landscape photos (foto1–foto24)
+    └── Yo/                 # Profile photo
+```
+
+---
+
+## Run Locally
+
+```bash
+git clone https://github.com/MatiasBocco/Photography.git
+cd Photography
+# Open index.html in any browser — no server required
+```
+
+Or with Python's built-in server:
+
+```bash
+python -m http.server 8000
+# Visit http://localhost:8000
+```
+
+---
+
+## Design Decisions
+
+**No JavaScript frameworks** — the site is a static gallery. React or Vue would add hundreds of KB for zero benefit. Pure JS keeps it instant.
+
+**CSS Grid without media queries** — `minmax(250px, 1fr)` reflows automatically. One rule covers every screen size.
+
+**IntersectionObserver for animations** — scroll events fire on every pixel and hurt performance. IntersectionObserver fires only when elements enter the viewport.
+
+**Blur-up instead of skeleton screens** — the actual image loads and sharpens in place. No layout shift, no placeholder flicker.
+
+**Email reveal on click** — hides the address from scrapers without sacrificing usability.
+
+---
+
+## Author
+
+**Matias Juan Bocco** — Córdoba, Argentina
+
+- Instagram: [@matias_bocco](https://www.instagram.com/matias_bocco/)
+- LinkedIn: [Matías Juan Bocco](https://www.linkedin.com/in/mat%C3%ADas-juan-bocco-01a1a3405/)
+- Email: matiasjbocco@gmail.com
+
+---
+
+© 2026 Matias Juan Bocco — All rights reserved.
