@@ -72,4 +72,46 @@ document.addEventListener('DOMContentLoaded', function () {
             if (e.key === 'Escape') closeLightbox();
         }
     });
+
+    let touchStartX = 0;
+    let touchEndX = 0;
+    const SWIPE_THRESHOLD = 50;
+
+    lightbox.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].clientX;
+    }, { passive: true });
+
+    lightbox.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].clientX;
+        const diff = touchStartX - touchEndX;
+        if (Math.abs(diff) > SWIPE_THRESHOLD) {
+            if (diff > 0) nextImage();
+            else prevImage();
+        }
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry, i) => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('visible');
+                }, i * 60);
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.galeria img').forEach(img => observer.observe(img));
+
+    document.querySelectorAll('.galeria img').forEach(img => {
+        if (img.complete && img.naturalWidth > 0) {
+            img.classList.add('loaded');
+        } else {
+            img.addEventListener('load', () => img.classList.add('loaded'));
+            img.addEventListener('error', () => {
+                img.classList.add('loaded');
+                img.style.opacity = '0.3';
+            });
+        }
+    });
 });

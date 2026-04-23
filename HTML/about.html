@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sobre Matias Juan Bocco - Fotógrafo apasionado por los deportes, paisajes, autos y fauna. Estudiante de Ingeniería en Sistemas en la UCC.">
+    <meta name="keywords" content="Matias Bocco, fotógrafo, UCC, Córdoba, sobre mí">
+    <meta property="og:title" content="Sobre mí - Matias Juan Bocco">
+    <meta property="og:description"
+        content="Fotógrafo apasionado por los deportes, los paisajes, los autos y la fauna.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="../Fotos/landscapes/foto24.jpg">
+    <title>Sobre mí - Matias Juan Bocco</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="pagina-sobre">
+
+    <nav class="nav-galerias">
+        <a href="../index.html">Inicio</a>
+        <a href="sports.html">Deportes</a>
+        <a href="birds.html">Fauna</a>
+        <a href="cars.html">Automóviles</a>
+        <a href="landscapes.html">Paisajismo</a>
+        <a href="about.html" class="active">Sobre mí</a>
+    </nav>
+
+    <header>
+        <h1>Sobre mí</h1>
+    </header>
+
+    <main>
+        <div class="about-card">
+            <!-- REEMPLAZAR con foto de perfil personal -->
+            <img class="about-foto" src="../Fotos/Yo/1776969500388.jpg" alt="Matias Juan Bocco">
+
+            <div class="about-texto">
+                <h2>Matias Juan Bocco</h2>
+                <p class="about-sub">20 años · Universidad Católica de Córdoba</p>
+                <p class="about-desc">
+                    Fotógrafo apasionado por los deportes, los paisajes, los autos y la fauna.
+                    Estudiante de Ingeniería en Sistemas en la UCC.
+                </p>
+                <!-- REEMPLAZAR con tu @ de Instagram -->
+                <div class="about-social">
+                    <a href="https://www.instagram.com/matias_bocco/" class="btn-instagram" target="_blank" rel="noopener">@matias_bocco</a>
+                    <a href="https://www.linkedin.com/in/mat%C3%ADas-juan-bocco-01a1a3405/" class="btn-linkedin"
+                        target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="mailto:matiasjbocco@gmail.com" class="btn-mail">Email</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <a href="../index.html" class="btn-inicio">⬆ Volver al Inicio</a>
+
+    <footer>
+        <p>&copy; 2026 Matias Juan Bocco — Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        document.querySelector('.btn-mail').addEventListener('click', function (e) {
+            e.preventDefault();
+            const link = document.createElement('a');
+            link.href = 'mailto:matiasjbocco@gmail.com';
+            link.textContent = 'matiasjbocco@gmail.com';
+            link.className = 'email-revealed';
+            this.replaceWith(link);
+        });
+    </script>
+</body>
+
+</html>

@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio fotográfico de Matias Juan Bocco - Fotografía de deportes, fauna, automóviles y paisajes. Fotógrafo profesional con formación en la Universidad Católica de Córdoba.">
-    <meta name="keywords" content="fotografía, portfolio, Matias Bocco, deportes, fauna, automóviles, paisajes, fotógrafo Córdoba, fotografía profesional">
+    <meta name="description"
+        content="Portfolio fotográfico de Matias Juan Bocco - Fotografía de deportes, fauna, automóviles y paisajes. Fotógrafo profesional con formación en la Universidad Católica de Córdoba.">
+    <meta name="keywords"
+        content="fotografía, portfolio, Matias Bocco, deportes, fauna, automóviles, paisajes, fotógrafo Córdoba, fotografía profesional">
     <meta name="author" content="Matias Juan Bocco">
     <meta property="og:title" content="Portfolio Fotográfico - Matias Juan Bocco">
     <meta property="og:description" content="Fotografía profesional de deportes, fauna, automóviles y paisajes">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="Fotos/birds/foto1.jpg">
+    <meta property="og:image" content="Fotos/landscapes/foto24.jpg">
     <title>Portfolio Fotográfico - Matias Juan Bocco</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,6 +21,16 @@
 </head>
 
 <body class="inicio">
+    <div id="intro-slider">
+        <div class="slider-track">
+            <div class="slide"><img src="Fotos/landscapes/foto24.jpg" alt=""></div>
+            <div class="slide"><img src="Fotos/landscapes/foto21.jpg" alt=""></div>
+            <div class="slide"><img src="../Fotos/Deportes/IMG-20250820-WA0016.jpg" alt=""></div>
+            <div class="slide"><img src="../Fotos/birds/foto3.jpg" alt=""></div>
+            <div class="slide"><img src="Fotos/Deportes/IMG-20250820-WA0036.jpg" alt=""></div>
+        </div>
+        <div class="slider-fade-out"></div>
+    </div>
     <div class="overlay">
         <div class="contenido">
             <h1>Matias Juan Bocco</h1>
@@ -27,12 +39,27 @@
 
             <div class="botones">
                 <a href="HTML/sports.html" class="btn">Deportes</a>
+                <a href="HTML/landscapes.html" class="btn">Paisajismo</a>
                 <a href="HTML/birds.html" class="btn">Fauna</a>
                 <a href="HTML/cars.html" class="btn">Automoviles</a>
-                <a href="HTML/landscapes.html" class="btn">Paisajismo</a>
+                <a href="HTML/about.html" class="btn">Sobre mí</a>
             </div>
         </div>
     </div>
+    <script>
+        const slider = document.getElementById('intro-slider');
+        const totalDuration = 4800;
+        const fadeDuration = 600;
+
+        document.querySelector('.overlay').style.opacity = '0';
+        document.body.style.overflow = 'hidden';
+
+        setTimeout(() => {
+            slider.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            document.querySelector('.overlay').style.opacity = '1';
+        }, totalDuration + fadeDuration);
+    </script>
 </body>
 
 </html>
