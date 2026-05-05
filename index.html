@@ -5,12 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portfolio fotográfico de Matias Juan Bocco - Fotografía de deportes, fauna, automóviles y paisajes. Fotógrafo profesional con formación en la Universidad Católica de Córdoba.">
-    <meta name="keywords"
-        content="fotografía, portfolio, Matias Bocco, deportes, fauna, automóviles, paisajes, fotógrafo Córdoba, fotografía profesional">
+        content="Portfolio fotográfico de Matias Juan Bocco - Deportes, fauna, automóviles y paisajes.">
     <meta name="author" content="Matias Juan Bocco">
     <meta property="og:title" content="Portfolio Fotográfico - Matias Juan Bocco">
-    <meta property="og:description" content="Fotografía profesional de deportes, fauna, automóviles y paisajes">
     <meta property="og:type" content="website">
     <meta property="og:image" content="Fotos/landscapes/foto24.jpg">
     <title>Portfolio Fotográfico - Matias Juan Bocco</title>
@@ -21,6 +18,8 @@
 </head>
 
 <body class="inicio">
+
+    <!-- SPLASH INTRO — no tocar -->
     <div id="intro-slider">
         <div class="slider-track">
             <div class="slide"><img src="Fotos/landscapes/foto24.jpg" alt=""></div>
@@ -31,22 +30,124 @@
         </div>
         <div class="slider-fade-out"></div>
     </div>
-    <div class="overlay">
-        <div class="contenido">
-            <h1>Matias Juan Bocco</h1>
-            <p>Soy fotógrafo. Tengo pasión por los deportes, paisajes, los autos y los animales.</p>
-            <p>Tengo 20 años y realicé cursos de fotografia en la Universidad Católica de Córdoba</p>
 
-            <div class="botones">
-                <a href="HTML/sports.html" class="btn">Deportes</a>
-                <a href="HTML/landscapes.html" class="btn">Paisajismo</a>
-                <a href="HTML/fauna.html" class="btn">Fauna</a>
-                <a href="HTML/cars.html" class="btn">Automoviles</a>
-                <a href="HTML/about.html" class="btn">Sobre mí</a>
+    <!-- CONTENIDO PRINCIPAL (overlay usado por el script del splash) -->
+    <div class="overlay">
+
+        <!-- NAVBAR -->
+        <nav class="nav-main">
+            <span class="nav-logo">MATIAS BOCCO</span>
+            <div class="nav-links">
+                <a href="HTML/sports.html">Deportes</a>
+                <a href="HTML/fauna.html">Fauna</a>
+                <a href="HTML/cars.html">Automóviles</a>
+                <a href="HTML/landscapes.html">Paisajismo</a>
+                <a href="HTML/about.html">Sobre mí</a>
             </div>
-        </div>
+        </nav>
+
+        <!-- HERO -->
+        <section class="hero" style="background-image: url('Fotos/landscapes/foto24.jpg');">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <span class="hero-label">FOTOGRAFÍA</span>
+                    <h1 class="hero-name">Matias Juan Bocco</h1>
+                    <p class="hero-sub">Deportes · Fauna · Automóviles · Paisajismo</p>
+                    <div class="hero-line"></div>
+                    <p class="hero-location">Córdoba, Argentina · 2024–2026</p>
+                    <div class="hero-btns">
+                        <a href="HTML/sports.html" class="btn-dark">Deportes</a>
+                        <a href="HTML/fauna.html" class="btn-dark">Fauna</a>
+                        <a href="HTML/cars.html" class="btn-dark">Automóviles</a>
+                        <a href="HTML/landscapes.html" class="btn-dark">Paisajismo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERÍA PREVIEW -->
+        <section class="preview-section">
+            <p class="preview-label">TRABAJO RECIENTE</p>
+
+            <div class="preview-grid">
+
+                <!-- BELGRANO x4 -->
+
+
+
+                <div class="preview-cell wide" data-category="Belgrano vs Sarmiento">
+                    <img src="Fotos/Deportes/WhatsApp Image 2026-05-04 at 10.20.25 PM.jpeg" alt="Belgrano vs Sarmiento">
+                </div>
+                <div class="preview-cell wide" data-category="Belgrano vs Sarmiento">
+                    <img src="Fotos/Deportes/WhatsApp Image 2026-05-04 at 10.20.27 PM.jpeg" alt="Belgrano vs Sarmiento">
+                </div>
+                <div class="preview-cell" data-category="Belgrano vs Sarmiento">
+                    <img src="Fotos/Deportes/WhatsApp Image 2026-05-04 at 10.20.23 PM.jpeg" alt="Belgrano vs Sarmiento">
+                </div>
+
+                <div class="preview-cell wide" data-category="Belgrano vs Sarmiento">
+                    <img src="Fotos/Deportes/WhatsApp Image 2026-05-04 at 10.20.24 PM.jpeg" alt="Belgrano vs Sarmiento">
+                </div>
+
+
+                <!-- FAUNA x2 -->
+                <div class="preview-cell" data-category="Fauna" style="grid-column: span 1; aspect-ratio: 3/4;">
+                    <img src="Fotos/fauna/foto1.jpg" alt="Fauna">
+                </div>
+                <div class="preview-cell wide" data-category="Fauna">
+                    <img src="Fotos/fauna/foto2.jpg" alt="Fauna">
+                </div>
+
+                <!-- AUTOS x2 -->
+                <div class="preview-cell wide" data-category="Automóviles">
+                    <img src="Fotos/cars/foto1.jpg" alt="Automóviles">
+                </div>
+                <div class="preview-cell wide" data-category="Automóviles">
+                    <img src="Fotos/cars/foto2.jpg" alt="Automóviles">
+                </div>
+
+                <!-- WYOMING x2 -->
+                <div class="preview-cell" data-category="Wyoming 2026" style="aspect-ratio: 3/4;">
+                    <img src="Fotos/landscapes/foto22.jpg" alt="Wyoming 2026">
+                </div>
+                <div class="preview-cell wider" data-category="Wyoming 2026">
+                    <img src="Fotos/landscapes/foto21.jpg" alt="Wyoming 2026">
+                </div>
+
+
+            </div>
+        </section>
+
+        <!-- ABOUT STRIP -->
+        <section class="about-strip">
+            <div class="about-img-wrap">
+                <div class="about-img-circle">
+                    <img src="Fotos/Yo/1776969500388.jpg" alt="Matias Juan Bocco">
+                </div>
+            </div>
+            <div class="about-text">
+                <span class="about-label">SOBRE MÍ</span>
+                <h2 class="about-name">Matias Juan Bocco</h2>
+                <p class="about-bio">Fotógrafo apasionado por los deportes, paisajes, autos y fauna. Estudiante de
+                    Ingeniería en Sistemas en la Universidad Católica de Córdoba.</p>
+                <div class="about-btns">
+                    <a href="#" class="btn-dark">Instagram</a>
+                    <a href="#" class="btn-dark">LinkedIn</a>
+                    <a href="mailto:matiasjbocco@gmail.com" class="btn-dark">Mail</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer-main">
+            <span>© 2026 Matias Juan Bocco</span>
+            <span>Córdoba, Argentina</span>
+        </footer>
+
     </div>
+
     <script>
+        // Splash intro
         const slider = document.getElementById('intro-slider');
         const totalDuration = 4800;
         const fadeDuration = 600;
@@ -59,7 +160,16 @@
             document.body.style.overflow = 'auto';
             document.querySelector('.overlay').style.opacity = '1';
         }, totalDuration + fadeDuration);
+
+        // Hover label en celdas de galería
+        document.querySelectorAll('.preview-cell').forEach(cell => {
+            const label = document.createElement('span');
+            label.className = 'cell-label';
+            label.textContent = cell.dataset.category;
+            cell.appendChild(label);
+        });
     </script>
+
 </body>
 
 </html>
